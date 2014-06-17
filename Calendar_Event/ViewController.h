@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventKitDataSource.h"
+#import "Kal.h"
 
-@interface ViewController : UIViewController
+#import <EventKit/EventKit.h>
+#import <EventKitUI/EventKitUI.h>
+
+@class KalViewController;
+
+@interface ViewController : UIViewController<UITableViewDelegate>
+{
+    KalViewController *kal;
+    id dataSource;
+    UINavigationController *navController;
+}
 
 @end

@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@class KalViewController;
+@interface AppDelegate : UIResponder <UIApplicationDelegate,UITableViewDelegate>
+{
+    UIWindow *window;
+    UINavigationController *navController;
+    KalViewController *kal;
+    id dataSource;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

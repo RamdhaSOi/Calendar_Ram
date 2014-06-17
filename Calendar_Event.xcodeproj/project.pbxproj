@@ -21,6 +21,11 @@
 		4F61A5151929E86A00B229ED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F61A4F71929E86A00B229ED /* UIKit.framework */; };
 		4F61A51D1929E86A00B229ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4F61A51B1929E86A00B229ED /* InfoPlist.strings */; };
 		4F61A51F1929E86A00B229ED /* Calendar_EventTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F61A51E1929E86A00B229ED /* Calendar_EventTests.m */; };
+		4FA3D590192B279300E7110F /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4FA3D58C192B279300E7110F /* Kal.bundle */; };
+		4FA3D596192B281900E7110F /* EventKitDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA3D595192B281900E7110F /* EventKitDataSource.m */; };
+		4FA3D597192B283F00E7110F /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA3D593192B279300E7110F /* libKal.a */; };
+		4FA3D599192B284600E7110F /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA3D598192B284600E7110F /* EventKit.framework */; };
+		4FA3D59B192B284A00E7110F /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FA3D59A192B284A00E7110F /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F61A4EF1929E86A00B229ED;
 			remoteInfo = Calendar_Event;
+		};
+		4FA3D592192B279300E7110F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA3D58D192B279300E7110F /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
+		4FA3D59C192B285800E7110F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FA3D58D192B279300E7110F /* Kal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Kal;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -53,6 +72,12 @@
 		4F61A51A1929E86A00B229ED /* Calendar_EventTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calendar_EventTests-Info.plist"; sourceTree = "<group>"; };
 		4F61A51C1929E86A00B229ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4F61A51E1929E86A00B229ED /* Calendar_EventTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Calendar_EventTests.m; sourceTree = "<group>"; };
+		4FA3D58C192B279300E7110F /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Kal.bundle; sourceTree = "<group>"; };
+		4FA3D58D192B279300E7110F /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Kal.xcodeproj; sourceTree = "<group>"; };
+		4FA3D594192B281900E7110F /* EventKitDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventKitDataSource.h; sourceTree = "<group>"; };
+		4FA3D595192B281900E7110F /* EventKitDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventKitDataSource.m; sourceTree = "<group>"; };
+		4FA3D598192B284600E7110F /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		4FA3D59A192B284A00E7110F /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA3D59B192B284A00E7110F /* EventKitUI.framework in Frameworks */,
+				4FA3D599192B284600E7110F /* EventKit.framework in Frameworks */,
+				4FA3D597192B283F00E7110F /* libKal.a in Frameworks */,
 				4F61A4F61929E86A00B229ED /* CoreGraphics.framework in Frameworks */,
 				4F61A4F81929E86A00B229ED /* UIKit.framework in Frameworks */,
 				4F61A4F41929E86A00B229ED /* Foundation.framework in Frameworks */,
@@ -101,6 +129,8 @@
 		4F61A4F21929E86A00B229ED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4FA3D59A192B284A00E7110F /* EventKitUI.framework */,
+				4FA3D598192B284600E7110F /* EventKit.framework */,
 				4F61A4F31929E86A00B229ED /* Foundation.framework */,
 				4F61A4F51929E86A00B229ED /* CoreGraphics.framework */,
 				4F61A4F71929E86A00B229ED /* UIKit.framework */,
@@ -112,11 +142,15 @@
 		4F61A4F91929E86A00B229ED /* Calendar_Event */ = {
 			isa = PBXGroup;
 			children = (
+				4FA3D58C192B279300E7110F /* Kal.bundle */,
+				4FA3D58D192B279300E7110F /* Kal.xcodeproj */,
 				4F61A5021929E86A00B229ED /* AppDelegate.h */,
 				4F61A5031929E86A00B229ED /* AppDelegate.m */,
 				4F61A5051929E86A00B229ED /* Main.storyboard */,
 				4F61A5081929E86A00B229ED /* ViewController.h */,
 				4F61A5091929E86A00B229ED /* ViewController.m */,
+				4FA3D594192B281900E7110F /* EventKitDataSource.h */,
+				4FA3D595192B281900E7110F /* EventKitDataSource.m */,
 				4F61A50B1929E86A00B229ED /* Images.xcassets */,
 				4F61A4FA1929E86A00B229ED /* Supporting Files */,
 			);
@@ -152,6 +186,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4FA3D58E192B279300E7110F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FA3D593192B279300E7110F /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +208,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4FA3D59D192B285800E7110F /* PBXTargetDependency */,
 			);
 			name = Calendar_Event;
 			productName = Calendar_Event;
@@ -215,6 +258,12 @@
 			mainGroup = 4F61A4E71929E86A00B229ED;
 			productRefGroup = 4F61A4F11929E86A00B229ED /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4FA3D58E192B279300E7110F /* Products */;
+					ProjectRef = 4FA3D58D192B279300E7110F /* Kal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				4F61A4EF1929E86A00B229ED /* Calendar_Event */,
@@ -223,6 +272,16 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		4FA3D593192B279300E7110F /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = 4FA3D592192B279300E7110F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		4F61A4EE1929E86A00B229ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -230,6 +289,7 @@
 			files = (
 				4F61A50C1929E86A00B229ED /* Images.xcassets in Resources */,
 				4F61A4FE1929E86A00B229ED /* InfoPlist.strings in Resources */,
+				4FA3D590192B279300E7110F /* Kal.bundle in Resources */,
 				4F61A5071929E86A00B229ED /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FA3D596192B281900E7110F /* EventKitDataSource.m in Sources */,
 				4F61A50A1929E86A00B229ED /* ViewController.m in Sources */,
 				4F61A5041929E86A00B229ED /* AppDelegate.m in Sources */,
 				4F61A5001929E86A00B229ED /* main.m in Sources */,
@@ -270,6 +331,11 @@
 			isa = PBXTargetDependency;
 			target = 4F61A4EF1929E86A00B229ED /* Calendar_Event */;
 			targetProxy = 4F61A5161929E86A00B229ED /* PBXContainerItemProxy */;
+		};
+		4FA3D59D192B285800E7110F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kal;
+			targetProxy = 4FA3D59C192B285800E7110F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -304,7 +370,7 @@
 		4F61A5201929E86B00B229ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -333,7 +399,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -342,7 +409,7 @@
 		4F61A5211929E86B00B229ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -365,7 +432,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -374,11 +442,15 @@
 		4F61A5231929E86B00B229ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calendar_Event/Calendar_Event-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Calendar_Event/Calendar_Event-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -387,11 +459,15 @@
 		4F61A5241929E86B00B229ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Calendar_Event/Calendar_Event-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Calendar_Event/Calendar_Event-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -456,6 +532,7 @@
 				4F61A5241929E86B00B229ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F61A5251929E86B00B229ED /* Build configuration list for PBXNativeTarget "Calendar_EventTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +541,7 @@
 				4F61A5271929E86B00B229ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
